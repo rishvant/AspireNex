@@ -1,0 +1,81 @@
+.skills{
+    width: 80%;
+    height: fit-content;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills h1{
+    font-size: xx-large;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.container-card{
+    min-width: 18%;
+    width: 200px;
+    min-height: auto;
+    height: 200px;
+    background-color: rgb(31, 29, 29);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1%;
+}
+
+.container-card h4{
+    color: white;
+}
+
+.container-card img{
+    margin-top: 10%;
+    width: 50%;
+    height: 50%;
+}
+
+.container-card:hover{
+    background-color: var(--primary-dark);
+    transition: all 0.2s;
+    cursor: inherit;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .skills{
+        margin-top: 20%;
+    }
+    .container-card{
+        width: 100px;
+        height: 100px;
+    }
+    .container-card img{
+        margin-top: 2vh;
+        width: 40%;
+        height: 40%;
+    }
+    .container-card h4{
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .skills{
+        margin-top: -100px;
+    }
+    .container-card{
+        width: 23%;
+        height: 13vh;
+    }
+}

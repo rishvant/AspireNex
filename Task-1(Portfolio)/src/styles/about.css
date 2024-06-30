@@ -1,0 +1,33 @@
+.about{
+    margin: 10%;
+    height: 30vh;
+}
+
+.about-head{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color: white;
+}
+
+.about-line{
+    width: 7vh;
+    height: 1vh;
+    border-radius: 10px;
+    background-color: var(--primary-dark);
+    margin-top: -1vh;
+}
+
+.about-content{
+    margin-top: 4vh;
+    color: white;
+    text-align: justify;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .about{
+        margin-top: 20%;
+        line-height: 2.5vh;
+        height: 40vh;
+    }
+}

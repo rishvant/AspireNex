@@ -1,0 +1,99 @@
+.exp-head{
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+}
+
+.exp-container{
+    width: 80%;
+    height: 65vh;
+    margin-left: 10%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.exp-item{
+    width: 100%;
+    height: fit-content;
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.exp-dots{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5%;
+    margin-top: 3%;
+}
+
+.exp-line{
+    height: 90%;
+    width: 5px;
+    border-radius: 10px;
+    background-color: var(--primary-dark);
+}
+
+.exp-dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: var(--primary-dark);
+    box-shadow: inset 0px 0px 10px 2px rgba(255, 255, 255, 0.5), 0px 0px 10px 2px rgb(216, 220, 219);
+    animation: pulse 1s alternate infinite;
+}
+
+.exp-content{
+    width: 70%;
+}
+
+.exp-content ul{
+    margin-left: 2%;
+    padding: 0;
+    line-height: 150%;
+}
+
+.exp-content h3{
+    margin-top: 7%;
+}
+
+.exp-time{
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--primary-dark);
+    color: var(--bg-dark);
+    font-weight: bold;
+    padding: 1%;
+}
+
+.exp-time:hover{
+    box-shadow: 0px 0px 10px white;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .exp-container{
+        margin-top: 20%;
+    }
+    .exp-container{
+        height: 55vh;
+    }
+}

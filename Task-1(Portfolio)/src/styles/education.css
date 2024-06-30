@@ -1,0 +1,113 @@
+.container-education{
+    width: 80%;
+    height: fit-content;
+    margin: 10% 10% 0 10%;
+    color: white;
+}
+
+.container-education h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.container-education .item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    height: 40%;
+    margin: 10%;
+}
+
+.container-education .item .point{
+    background-color: var(--primary-dark);
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 10px 2px rgba(255, 255, 255, 0.5), 0px 0px 10px 2px rgb(216, 220, 219);
+    animation: pulse 1s alternate infinite;
+}
+
+.container-education .item .dots{
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    align-items: center;
+}
+
+.container-education .item .line{
+    width: 4px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--primary-dark);
+}
+
+.content-education{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    gap: 0;
+}
+
+.container-education .item img{
+    width: 150px;
+    height: 150px;
+}
+
+.container-education .item img:hover{
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+}
+
+.item .year{
+    background-color: var(--primary-dark);
+    width: fit-content;
+    height: 4vh;
+    padding: 5px;
+    margin-top: 1vh;
+    color: rgb(40, 39, 39);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item .year:hover{
+    box-shadow: 0px 0px 10px white;
+}
+
+@keyframes pulse{
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .container-education{
+        margin-top: 20%;
+    }
+    .container-education .item img {
+        width: 100px;
+        height: 100px;
+    }
+    .container-education .item{
+        width: 100%;
+        margin-left: 0;
+        margin-top: inherit;
+    }
+    .content-education h3{
+        font-size: 12px;
+    }
+    .content-education .year{
+        height: fit-content;
+    }
+}

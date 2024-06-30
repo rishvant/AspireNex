@@ -1,0 +1,38 @@
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: rgba(255, 255, 255, 0.036);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+}
+
+.items{
+    width: 100%;
+    height: 7vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    justify-content: center;
+    list-style-type: none;
+    z-index: 999;
+}
+
+.items li{
+    font-size: large;
+    padding: 2vh;
+    color: white;
+}
+
+.items li:hover{
+    background-color: var(--primary-dark);
+    color: white;
+    border-radius: 7px;
+    transition: all 0.2s;    
+}

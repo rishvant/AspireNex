@@ -1,0 +1,258 @@
+.front-container{
+    background-image: url("/header.png");
+    background-position: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+}
+
+.front-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 18%;
+    margin-left: 15%;
+    animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.front-content-1{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 5%;
+    width: max-content;
+}
+
+.text-2{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 5%;
+}
+
+.large-text{
+    font-size: 35px;
+    color: var(--primary-dark);
+}
+
+.front-content-btn{
+    width: 50%;
+    height: 8%;
+    border: solid var(--primary-dark) 2px;
+    border-radius: 7px;
+    padding: 5px;
+    text-decoration: none;
+    color: var(--primary-dark);
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+.front-content-btn:hover{
+    background-color: var(--primary-dark);
+    transition: all 0.2s;
+    color: white;
+    cursor: inherit;
+}
+
+.front-social{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 38%;
+    z-index: 1;
+    gap: 1rem;
+}
+
+.social-line-cont{
+    width: 30px;
+    height: 50%;
+    display: flex;
+    flex-direction: col;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.social-line{
+    height: 40%;
+    width: 15%;
+    background-color: var(--primary-dark);
+    border-radius: 10px;
+    margin-top: 70%;
+    animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.linkedin-social{
+    color: #0a66c2;
+    animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.twitter-social{
+    color: white;
+    animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.3s both;
+}
+
+.instagram-social{
+    color: white;
+    animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.6s both;
+}
+
+.github-social{
+    color: white;
+    animation: scale-in-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.9s both;
+}
+
+.social-icons{
+    width: 30px;
+    height: 100%;
+    margin-top: 7%;
+    /* margin-left: 80%; */
+}
+
+.animation {
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    background-image: linear-gradient(var(--primary-dark), var(--primary-dark));
+    -webkit-background-clip: text;
+    background-clip: none;
+    background-position: -500px 0;
+    animation: backcolor 5s alternate infinite;
+}
+
+@keyframes backcolor {
+    100% {
+        -webkit-text-stroke: 1px #33383C;
+        background-position: 0 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 80%;
+    }
+
+    section {
+        margin: 0;
+    }
+
+
+}
+
+@keyframes scale-in-center {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes down {
+    0% {
+        height: 0%;
+    }
+
+    25%{
+        height: 5%;
+    }
+
+    50%{
+        height: 10%;
+    }
+
+    100% {
+        height: 20%;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .front-container{
+        background-size: 200%;
+        background-position: 40%;
+        background-position-y: 90%;
+    }
+    .front-content{
+        width: 30%;
+        margin-top: 35%;
+        margin-left: 5%;
+    }
+    .front-content p{
+        font-size: 15px;
+    }
+    .front-content .front-content-1 span{
+        font-size: 23px;
+    }
+    .front-content-1{
+        min-width: 30vh;
+    }
+    .front-content-btn{
+        width: 75%;
+        height: 3vh;
+        font-size: 12px;
+    }
+    .social-line-cont{
+        height: 25%;
+    }
+    .social-line{
+        width: 10%;
+        height: 45%;
+    }
+    .social-icons{
+        width: 25px;
+    }
+    .text-1{
+        width: 250px;
+    }
+    .large-text{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .front-container{
+        background-size: cover;
+        background-position: 32%;
+    }
+    .front-content{
+        margin-left: 10%;
+        margin-top: 25%;
+        min-width: 35vh;
+    }
+    .front-content-1, .text-2{
+        font-size: 25px;
+    }
+    .front-content-btn{
+        width: 40%;
+        height: 4vh;
+    }
+    .large-text{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+    .front-content{
+        min-width: 45%;
+    }
+    .front-social{
+        visibility: hidden;
+    }
+}
