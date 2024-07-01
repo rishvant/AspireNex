@@ -4,32 +4,32 @@ const quizSchema = new mongoose.Schema({
     type: {
         String
     },
-    quizId: {
-        type: String
-    },
     title: {
         String
     },
     username: {
-        type: String,
-        unique: true
+        type: String
     },
     description: {
         type: String
     },
-    questions: [{
-        question: {
-            type: String
-        },
-        answer: {
-            type: String
-        },
-        correctOptions: [{
-            option: {
+    questions: [
+        {
+            question: {
                 type: String
-            }
-        }]
-    }],
+            },
+            options: [
+                {
+                    text: {
+                        type: String
+                    },
+                    isCorrect: {
+                        type: Boolean
+                    },
+                },
+            ],
+        },
+    ]
 });
 
 const Quiz = new mongoose.model("Quiz", quizSchema);
