@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:3000/api/quizzes';
+const API_URL = 'https://aspirenex-4oaq.onrender.com/api/quizzes';
 
 export const getAllQuizzes = async () => {
   const response = await axios.get(API_URL);
