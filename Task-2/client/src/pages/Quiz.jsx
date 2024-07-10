@@ -57,7 +57,7 @@ const Quiz = () => {
     };
 
     try {
-      await axios.post(`http://localhost:5000/quiz/${id}/submit`, results);
+      await axios.post(`https://aspirenex-4oaq.onrender.com/api`, results);
       // Handle successful submission (e.g., navigate to results page)
     } catch (error) {
       console.error("Error submitting quiz:", error);

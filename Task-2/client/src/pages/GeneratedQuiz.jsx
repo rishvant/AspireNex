@@ -12,8 +12,8 @@ const GeneratedQuiz = () => {
             </p>
             <p className="text-center text-xl sm:text-2xl text-wrap flex flex-col flex-wrap">
               Your generated quiz can be played on the below link:
-              <Link to={`http://localhost:5173/quiz/${quizID}`} className="text-blue-700 underline">
-                http://localhost:5173/startquiz/{quizID}
+              <Link to={`https://instant-quizzer.vercel.app/quiz/${quizID}`} className="text-blue-700 underline">
+                https://instant-quizzer.vercel.app/startquiz/{quizID}
               </Link>
             </p>
           </div>
